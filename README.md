@@ -1,74 +1,70 @@
-# my-first-repositary we will try to determine age group of verious people in this data set
-## discreption - in this analysis we will determine marks of various age groups before pre test and post test in exam Jason','Molly','Tina','Jake','Amy' 
+# my-first-repositary 
+we will try to determine the pre marks and post marks of various age group of verious people in this data set
+## discreption 
+in this analysis we will determine marks of various age groups before pre test and post test in exam Jason','Molly','Tina','Jake','Amy' 
 'age':[42,52,36,24,73],
 ## Getting Strated
 ## Dependencies
-## Installing
+Pandas,numpy,matplotlib
 ## Executing program
-#Load libraries
-import pandas as pd
-import matplotlib.pyplot as plt
-%matplotlib inline
-#Input some data
+#Load libraries<br>
+
+import pandas as pd<br>
+
+import matplotlib.pyplot as plt<br>
+%matplotlib inline<br>
+#Input some data<br>
+
 data ={'name':['Jason','Molly','Tina','Jake','Amy'],
       'age':[42,52,36,24,73],
       'preTestScore':[4,24,31,2,3],
-      'postTestScore':[25,94,57,62,70]}
- {'name': ['Jason', 'Molly', 'Tina', 'Jake', 'Amy'],
- 'age': [42, 52, 36, 24, 73],
- 'preTestScore': [4, 24, 31, 2, 3],
- 'postTestScore': [25, 94, 57, 62, 70]}
- ## Convert Data into a Dataframe
-df=pd.DataFrame(data, columns =['name','age','preTestScore','postTestScore'])
-df.head()
-name	age	preTestScore	postTestScore
-0	Jason	42	4	25
-1	Molly	52	24	94
-2	Tina	36	31	57
-3	Jake	24	2	62
-4	Amy	73	3	70
-# Show "name" variable
-df['name']
-0    Jason
-1    Molly
-2     Tina
-3     Jake
-4      Amy
-Name: name, dtype: object
-# Show "age" variable
-df['age']
-0    42
-1    52
-2    36
-3    24
-4    73
-Name: age, dtype: int64
-## Transpose Dataframe
-df.T
-	0	1	2	3	4
-name	Jason	Molly	Tina	Jake	Amy
-age	42	52	36	24	73
-preTestScore	4	24	31	2	3
-postTestScore	25	94	57	62	70
-#Create Simple Line Graphs
+      'postTestScore':[25,94,57,62,70]}<br>
+      
+ {'name': ['Jason', 'Molly', 'Tina', 'Jake', 'Amy'],<br>
+ 'age': [42, 52, 36, 24, 73],<br>
+ 
+ 'preTestScore': [4, 24, 31, 2, 3],<br>
+ 
+ 'postTestScore': [25, 94, 57, 62, 70]}<br>
+ 
+ #Convert Data into a Dataframe<br>
+ 
+df=pd.DataFrame(data, columns =['name','age','preTestScore','postTestScore'])<br>
+df.head()<br>
 
-## Plot Lines
-plt.plot(df.preTestScore, label='preTestScore')
-plt.plot(df.postTestScore, label='postTestScore')
+#Show "name" variable<br>
+df['name']<br>
 
-## Titles
-plt.title('Test Score Results')
-plt.xlabel('Name')
-plt.ylabel('Score')
+Name: name, dtype: object<br>
 
-## Legend 
-plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.show()
-# Help
-# Authors
+#Show "age" variable<br>
+df['age']<br>
+
+Name: age, dtype: int64<br>
+
+#Transpose Dataframe<br>
+df.T<br>
+
+#Create Simple Line Graphs<br>
+
+#Plot Lines<br>
+plt.plot(df.preTestScore, label='preTestScore')<br>
+plt.plot(df.postTestScore, label='postTestScore')<br>
+
+#Titles<br>
+plt.title('Test Score Results')<br>
+plt.xlabel('Name')<br>
+plt.ylabel('Score')<br>
+
+#Legend <br>
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2)<br>
+plt.show()<br>
+## Authors
 @tawseefm
+
 ## Version History
 0.1
 initial release 
+
 ## License
 This project is licensed under the [Tawseef Mir] License - see the LICENSE.md file for details
